@@ -42,24 +42,29 @@ class fifo_monitor;
     endfunction
 
     task monitor();
-        bit valid_d;
-        logic [7:0] data_d;
+    bit valid_d, valid_q;
+    logic [7:0] data_d, data_q;
 
         forever begin
             @(posedge vif.clk);
 
-            valid_d = vif.rd_en && !vif.empty;  // blocking assignment
-            data_d = vif.data_out;               // blocking assignment
+                // Capture current signals
+                valid_d = vif.rd_en && !vif.empty;
+                data_d  = vif.data_out;
 
-            if (valid_d) begin
-                fifo_transaction t = new();
-                t.write = 0;
-                t.data = data_d;
-                mon2scb.put(t);
+                // Evaluate previous cycle's values
+                if (valid_q) begin
+                    fifo_transaction t = new();
+                    t.write = 0;
+                    t.data  = data_q;
+                    mon2scb.put(t);
+                end
+
+                // Delay registers (shift for next cycle)
+                valid_q = valid_d;
+                data_q  = data_d;
             end
-        end
-    endtask
-
+        endtask
 endclass
 
 

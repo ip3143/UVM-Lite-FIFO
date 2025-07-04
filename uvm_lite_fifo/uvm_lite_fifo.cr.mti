@@ -13,6 +13,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	fifo_test
 
+} {} {}} C:/uvm_lite_fifo/rtl/fifo.sv {1 {vlog -work work -sv -stats=none C:/uvm_lite_fifo/rtl/fifo.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module fifo
+
+Top level modules:
+	fifo
+
 } {} {}} C:/uvm_lite_fifo/tb/fifo_env.sv {1 {vlog -work work -sv -stats=none C:/uvm_lite_fifo/tb/fifo_env.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 
