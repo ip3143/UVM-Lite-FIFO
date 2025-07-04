@@ -23,3 +23,26 @@ This project implements and verifies a parameterized FIFO (First-In-First-Out) b
 - **SystemVerilog**
 - **ModelSim** for simulation and debugging
 
+## How to Run the Simulation
+
+1. Open ModelSim and create a project.
+2. Add all `.sv` files to the project.
+3. Ensure `+sv` is passed during compilation (`vlog +sv ...`) if using CLI.
+4. Set `fifo_test` as the top-level module.
+5. Run the simulation and view results in the waveform viewer or console output.
+
+## Sample Output
+PASS: Got expected data A0
+PASS: Got expected data A1
+PASS: Got expected data A2
+PASS: Got expected data A3
+
+(potential extra debugging messages)
+
+## Concepts Demonstrated
+
+- RTL design principles (FIFO logic, synchronous interfaces)
+- UVM-style verification without full UVM overhead
+- Mailbox communication and modular testbench construction
+- Debugging via waveforms and scoreboard
+- Handling off-by-one/timing delays in monitor logic
