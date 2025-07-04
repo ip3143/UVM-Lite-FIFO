@@ -1,0 +1,29 @@
+C:/uvm_lite_fifo/tb/fifo_if.sv {1 {vlog -work work -sv -stats=none C:/uvm_lite_fifo/tb/fifo_if.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling interface fifo_if
+
+Top level modules:
+	--none--
+
+} {} {}} C:/uvm_lite_fifo/tb/fifo_test.sv {1 {vlog -work work -sv -stats=none C:/uvm_lite_fifo/tb/fifo_test.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling package fifo_test_sv_unit
+-- Compiling module fifo_test
+
+Top level modules:
+	fifo_test
+
+} {} {}} C:/uvm_lite_fifo/rtl/fifo.sv {1 {vlog -work work -sv -stats=none C:/uvm_lite_fifo/rtl/fifo.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module fifo
+
+Top level modules:
+	fifo
+
+} {} {}} C:/uvm_lite_fifo/tb/fifo_env.sv {1 {vlog -work work -sv -stats=none C:/uvm_lite_fifo/tb/fifo_env.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+
+Top level modules:
+	--none--
+
+} {} {}}
