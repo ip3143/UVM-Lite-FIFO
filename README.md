@@ -32,10 +32,10 @@ This project implements and verifies a parameterized FIFO (First-In-First-Out) b
 5. Run the simulation and view results in the waveform viewer or console output.
 
 ## Sample Output
-PASS: Got expected data A0
-PASS: Got expected data A1
-PASS: Got expected data A2
-PASS: Got expected data A3
+- PASS: Got expected data A0
+- PASS: Got expected data A1
+- PASS: Got expected data A2
+- PASS: Got expected data A3
 
 (potential extra debugging messages)
 
